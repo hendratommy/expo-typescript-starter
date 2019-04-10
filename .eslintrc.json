@@ -6,14 +6,12 @@
         "plugin:@typescript-eslint/recommended",
         "plugin:react/recommended"
     ],
-    "rules": {
-        "no-console": "off",
-        "@typescript-eslint/explicit-function-return-type": "off",
-        "@typescript-eslint/explicit-member-accessibility": "off",
-        "@typescript-eslint/interface-name-prefix": ["error", "always"]
+    "env": {
+        "es6": true
     },
     "parserOptions": {
         "sourceType": "module",
+        "ecmaVersion": 2017,
         "ecmaFeatures": {
             "jsx": true
         },
@@ -23,5 +21,12 @@
         "react": {
             "version": "detect"
         }
+    },
+    "rules": {
+        "no-console": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/explicit-member-accessibility": "off",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/interface-name-prefix": ["error", "always"]
     }
 }
