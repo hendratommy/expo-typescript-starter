@@ -1,8 +1,17 @@
-# koa-rest-typescript-minimalist-starter
+# expo-typescript-starter
 
-KOA REST Typescript starter with minimal dependencies
+### Start with custom LAN IP address
 
-## Debugging with VS Code
+Windows:
 
-1. Run `npm run start:debug`
-2. Attach to process (F5)
+```
+set REACT_NATIVE_PACKAGER_HOSTNAME=192.168.0.1
+npm start
+```
+
+Linux:
+
+```
+export REACT_NATIVE_PACKAGER_HOSTNAME=192.168.0.1
+npm start
+```
